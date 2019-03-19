@@ -8,63 +8,125 @@
 }
 
 /* open sans font */
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-Light.ttf);
-font-display: swap;
-font-weight: 100; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
-font-display: swap;
-font-weight: 400; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-Semibold.ttf);
-font-display: swap;
-font-weight: 600; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
-font-display: swap;
-font-weight: 700; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-ExtraBold.ttf);
-font-display: swap;
-font-weight: 900; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-LightItalic.ttf);
-font-display: swap;
-font-weight: 100;
-font-style: italic; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-Italic.ttf);
-font-display: swap;
-font-weight: 400;
-font-style: italic; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-SemiboldItalic.ttf);
-font-display: swap;
-font-weight: 600;
-font-style: italic; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-BoldItalic.ttf);
-font-display: swap;
-font-weight: 700;
-font-style: italic; }
-@font-face
-{ font-family: OpenSans; src: url(../fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf);
-font-display: swap;
-font-weight: 900;
-font-style: italic; }
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+    font-display: swap;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Semibold.ttf);
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-ExtraBold.ttf);
+    font-display: swap;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-LightItalic.ttf);
+    font-display: swap;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Italic.ttf);
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-SemiboldItalic.ttf);
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-BoldItalic.ttf);
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf);
+    font-display: swap;
+    font-weight: 900;
+    font-style: italic;
+}
 
 body {
     background-color: #262626;
-    width: 80vw;
-    margin: auto;
 }
 
 h1 {
     color: #fff;
+    margin-top: 20px;
+}
+
+div.container {
+    width: 75vw;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .logo {
-    width: 100%;
-    margin-top: 20%;
+    width: 200px;
+}
+
+.logomenu {
+    display: inline-block;
+}
+
+.navbar {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navlist > li {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: #e5e5e5;
+}
+
+.navlist > li:hover {
+    color: #fff;
+    cursor: pointer;
 }
